@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 const InventoryItemAdd = () => {
   const [item, setItem] = useState({
     item_name: "",
-    item_serial: '',
+    item_serial: 'None',
     item_quantity: '',
     item_desc: '',
     item_remarks: '',
@@ -65,9 +65,17 @@ const InventoryItemAdd = () => {
                 </div>
               </td>
               <td>
-                <div className="mb-3 mt-3">
-                        <label className="form-label">Serial#:</label>
-                        <input type="text" className="form-control" id="item_serial" placeholder="Enter Serial#" name="item_serial" onChange={handleChange} />
+                    <div className="mb-3 mt-3">
+                        <label className="form-label">Department:</label>
+                        <select className="form-control" id="dept_id" name="dept_id" onChange={handleChange}>
+                          {
+                            departments.map((department, i) => {
+                              return (
+                                <option value={department.dept_id} key={i}>{department.dept_name}</option>
+                              )
+                            })
+                          }
+                        </select>
                     </div>
                     <div className="mb-3 mt-3">
                         <label className="form-label">Purchase Date:</label>
@@ -82,20 +90,6 @@ const InventoryItemAdd = () => {
                     <div className="mb-3 mt-3">
                         <label className="form-label">Cost:</label>
                         <input type="number" className="form-control" id="item_buy_cost" placeholder="Enter Cost" name="item_buy_cost" onChange={handleChange} />
-                </div>
-              </td>
-              <td>
-                <div className="mb-3 mt-3">
-                        <label className="form-label">Department:</label>
-                        <select className="form-control" id="dept_id" name="dept_id" onChange={handleChange}>
-                          {
-                            departments.map((department, i) => {
-                              return (
-                                <option value={department.dept_id} key={i}>{department.dept_name}</option>
-                              )
-                            })
-                          }
-                        </select>
                 </div>
               </td>
             </tr>

@@ -37,11 +37,6 @@ const InventoryItemView = () => {
                         </td>
                         <td>
                             <div className="m-2">
-                                Serial#: {item.item_serial}
-                            </div>
-                        </td>
-                        <td>
-                            <div className="m-2">
                                 Quantity: {item.item_quantity}
                             </div>
                         </td>
