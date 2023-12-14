@@ -29,6 +29,7 @@ main{
     display: flex;
     align-items: center;
     padding: 20px 15px;
+    gap: 15px;
 }
 
 .logo{

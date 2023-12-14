@@ -19,7 +19,7 @@ function Login() {
         axios.post('http://localhost:8081/login', values)
         .then(res => {
             if(res.data === "Success") {
-                navigate('/dashboard_admin');
+                navigate('/inventory');
             }
             else {
                 alert("Account does not exist.");
