@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
-
+//mergeing Sidebar Component, Inventory.jsx, Login.jsx and DashboardAdmin.jsx
 function Login() {
     const [values, setValues] = useState({
         user_idnum: '',
