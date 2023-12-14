@@ -13,3 +13,6 @@
 - Search function
 - View Details
 - Adjustable tables
+
+#### SQL Database Using Xampp Control ###
+Link - https://drive.google.com/file/d/1C9lL_sLeNdmHkyydDNLdHcsYbR2sK53V/view
