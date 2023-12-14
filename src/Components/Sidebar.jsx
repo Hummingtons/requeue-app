@@ -10,7 +10,7 @@ import {
     FaSignOutAlt
 } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
-import logo from '../Images/unicore_logo_white.png';
+
 
 const Sidebar = ({children}) => {
     const [isOpen, setIsOpen] = useState(false);
